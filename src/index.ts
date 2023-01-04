@@ -1,8 +1,7 @@
-import express, { Request, Response } from 'express';
-import Alexa from 'ask-sdk';
-import { ExpressAdapter } from 'ask-sdk-express-adapter';
-import { itemRequest } from './itemHandler';
-
+const express = require('express');
+const Alexa = require('ask-sdk');
+const { ExpressAdapter } = require('ask-sdk-express-adapter');
+const { itemRequest } = require('./itemHandler');
 
 const app = express();
 
