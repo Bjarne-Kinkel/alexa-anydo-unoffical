@@ -1,29 +1,39 @@
 {
   "manifest": {
-    "apis": {
-      "custom": {
-        "endpoint": {
-          "sslCertificateType": "Trusted",
-          "uri": "https://test.url.bjarne.de/test"
-        },
-        "interfaces": []
-      }
-    },
     "manifestVersion": "1.0",
     "publishingInformation": {
-      "category": "KNOWLEDGE_AND_TRIVIA",
+      "category": "TO_DO_LISTS_AND_NOTES",
       "distributionCountries": [],
       "isAvailableWorldwide": true,
       "locales": {
         "de-DE": {
-          "description": "Sample Full Description",
-          "examplePhrases": ["Alexa öffne hallo welt"],
+          "description": "Verbindet die Alex-Listen mit Any.do",
+          "examplePhrases": ["Noch nicht eingebunden..."],
           "keywords": [],
-          "name": "full test",
-          "summary": "Sample Short Description"
+          "name": "Any.do (unoffical)",
+          "summary": "Verbinde die Alex-Listen mit Any.do"
         }
       },
       "testingInstructions": "Sample Testing Instructions."
-    }
+    },
+
+    "apis": {
+      "householdList": {},
+      "custom": {
+        "endpoint": {
+          "sslCertificateType": "Trusted",
+          "uri": "https://alexa-anydo-unoffical-bjarne.cyclic.app/skill"
+        },
+        "interfaces": []
+      }
+    },
+    "events": {
+      "endpoint": {
+        "sslCertificateType": "Trusted",
+        "uri": "https://alexa-anydo-unoffical-bjarne.cyclic.app/skill"
+      },
+      "subscriptions": [{ "eventName": "ITEMS_CREATED" }]
+    },
+    "permissions": [{ "name": "alexa::household:lists:read" }]
   }
 }
