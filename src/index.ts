@@ -11,8 +11,4 @@ const adapter = new ExpressAdapter(skill, true, true);
 
 app.post('/skill', adapter.getRequestHandlers());
 
-app.all('/skill', (req: Request, res: Response) => {
-    res.send('Yo!');
-});
-
 app.listen(3000);
