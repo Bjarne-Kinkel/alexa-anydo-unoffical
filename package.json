@@ -5,7 +5,7 @@
   "main": "src/index.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "npx tsc",
+    "build": "esbuild src/index.ts --bundle --outfile=build/index.js",
     "run": "node ./build/index.js"
   },
   "keywords": [
@@ -19,5 +19,8 @@
   "license": "ISC",
   "devDependencies": {
     "typescript": "^4.9.4"
+  },
+  "dependencies": {
+    "esbuild": "0.16.13"
   }
 }

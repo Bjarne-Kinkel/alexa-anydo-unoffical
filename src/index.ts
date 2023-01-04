@@ -1,1 +1,1 @@
-console.log("It Works!")
+console.log("EsBuild Works!")
