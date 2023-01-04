@@ -1,0 +1,23 @@
+{
+  "name": "alexa-anydo-unoffical",
+  "version": "1.0.0",
+  "description": "An Alexa-Skill to connect Any.do with Alexa",
+  "main": "src/index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx tsc",
+    "run": "node ./build/index.js"
+  },
+  "keywords": [
+    "alexa",
+    "anydo",
+    "todo",
+    "todolist",
+    "list"
+  ],
+  "author": "Bjarne Kinkel",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^4.9.4"
+  }
+}

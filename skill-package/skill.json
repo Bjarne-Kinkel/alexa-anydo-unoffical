@@ -1,0 +1,29 @@
+{
+  "manifest": {
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "sslCertificateType": "Trusted",
+          "uri": "https://test.url.bjarne.de/test"
+        },
+        "interfaces": []
+      }
+    },
+    "manifestVersion": "1.0",
+    "publishingInformation": {
+      "category": "KNOWLEDGE_AND_TRIVIA",
+      "distributionCountries": [],
+      "isAvailableWorldwide": true,
+      "locales": {
+        "de-DE": {
+          "description": "Sample Full Description",
+          "examplePhrases": ["Alexa öffne hallo welt"],
+          "keywords": [],
+          "name": "full test",
+          "summary": "Sample Short Description"
+        }
+      },
+      "testingInstructions": "Sample Testing Instructions."
+    }
+  }
+}
