@@ -1,7 +1,7 @@
 {
   "interactionModel": {
     "languageModel": {
-      "invocationName": "full test",
+      "invocationName": "any do",
       "intents": [
         {
           "name": "AMAZON.CancelIntent",
@@ -18,12 +18,7 @@
         {
           "name": "HelloWorldIntent",
           "slots": [],
-          "samples": [
-            "hallo",
-            "wie geht\u0027s dir",
-            "sag hallo welt",
-            "sag hallo"
-          ]
+          "samples": ["hallo", "wie geht\u0027s dir", "sag hallo welt", "sag hallo"]
         },
         {
           "name": "AMAZON.NavigateHomeIntent",

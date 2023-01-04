@@ -3,7 +3,7 @@
     "apis": {
       "custom": {
         "endpoint": {
-          "sslCertificateType": "Trusted",
+          "sslCertificateType": "Wildcard",
           "uri": "https://alexa-anydo-unoffical-bjarne.cyclic.app/skill"
         },
         "interfaces": []
@@ -12,7 +12,7 @@
     },
     "events": {
       "endpoint": {
-        "sslCertificateType": "Trusted",
+        "sslCertificateType": "Wildcard",
         "uri": "https://alexa-anydo-unoffical-bjarne.cyclic.app/skill"
       },
       "subscriptions": [
@@ -34,9 +34,7 @@
       "locales": {
         "de-DE": {
           "description": "Verbindet die Alex-Listen mit Any.do",
-          "examplePhrases": [
-            "Noch nicht eingebunden..."
-          ],
+          "examplePhrases": ["Noch nicht eingebunden..."],
           "keywords": [],
           "name": "Any.do (unoffical)",
           "summary": "Verbinde die Alex-Listen mit Any.do"
