@@ -1,13 +1,6 @@
 {
   "manifest": {
     "apis": {
-      "custom": {
-        "endpoint": {
-          "sslCertificateType": "Wildcard",
-          "uri": "https://alexa-anydo-unoffical-bjarne.cyclic.app/skill"
-        },
-        "interfaces": []
-      },
       "householdList": {}
     },
     "events": {
@@ -17,30 +10,46 @@
       },
       "subscriptions": [
         {
+          "eventName": "SKILL_ENABLED"
+        },
+        {
+          "eventName": "SKILL_DISABLED"
+        },
+        {
+          "eventName": "SKILL_PERMISSION_ACCEPTED"
+        },
+        {
+          "eventName": "SKILL_PERMISSION_CHANGED"
+        },
+        {
+          "eventName": "SKILL_ACCOUNT_LINKED"
+        },
+        {
           "eventName": "ITEMS_CREATED"
+        },
+        {
+          "eventName": "ITEMS_UPDATED"
+        },
+        {
+          "eventName": "ITEMS_DELETED"
         }
       ]
     },
-    "manifestVersion": "1.0",
+
+    "publishingInformation": {
+      "locales": {
+        "de-DE": {
+          "name": "any.do (private)"
+        }
+      }
+    },
     "permissions": [
       {
         "name": "alexa::household:lists:read"
-      }
-    ],
-    "publishingInformation": {
-      "category": "TO_DO_LISTS_AND_NOTES",
-      "distributionCountries": [],
-      "isAvailableWorldwide": true,
-      "locales": {
-        "de-DE": {
-          "description": "Verbindet die Alex-Listen mit Any.do",
-          "examplePhrases": ["Noch nicht eingebunden..."],
-          "keywords": [],
-          "name": "Any.do (unoffical)",
-          "summary": "Verbinde die Alex-Listen mit Any.do"
-        }
       },
-      "testingInstructions": "Sample Testing Instructions."
-    }
+      {
+        "name": "alexa::household:lists:write"
+      }
+    ]
   }
 }
