@@ -2,7 +2,7 @@
   "askToolkitResourcesVersion": "2020-04-15",
   "profiles": {
     "default": {
-      "skillId": "amzn1.ask.skill.ce8a14b0-564f-466f-8d65-605ec26593bf",
+      "skillId": "amzn1.ask.skill.3a040cd1-eb9f-4bae-a6da-e68fd5357e6f",
       "skillMetadata": {
         "src": "skill-package"
       }
