@@ -5,9 +5,13 @@ const { itemRequest } = require('./itemHandler');
 
 const app = express();
 
-const skill = Alexa.SkillBuilders.custom().addRequestHandlers(itemRequest).create();
-const adapter = new ExpressAdapter(skill, true, true);
+// const skill = Alexa.SkillBuilders.custom().addRequestHandlers(itemRequest)
+// .withApiClient(new Alexa.DefaultApiClient())
+// .withCustomUserAgent("cookbook/list-events/v1")
+// .create();
 
-app.post('/skill', adapter.getRequestHandlers());
+// const adapter = new ExpressAdapter(skill, true, true);
+
+// app.post('/skill', adapter.getRequestHandlers());
 
 app.listen(3000);
